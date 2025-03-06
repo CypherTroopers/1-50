@@ -1,0 +1,21 @@
+The prefixes `h`, `b`, `H`, `l`, and `r` defined in `schema.go` from lines 156 to 239, along with their descriptions, are as follows:
+
+- `h` (headerPrefix)
+  - Tracks block headers.
+  - Used in `headerTDKey`, `headerHashKey`, `headerKey`, etc.
+
+- `b` (blockBodyPrefix)
+  - Tracks block bodies.
+  - Used in `blockBodyKey`, `keyBlockBodyKey`, etc.
+
+- `H` (headerNumberPrefix)
+  - Tracks the block number associated with a block header hash.
+  - Used in `headerNumberKey`.
+
+- `l` (txLookupPrefix)
+  - Tracks the lookup information for a transaction.
+  - Used in `txLookupKey`.
+
+- `r` (blockReceiptsPrefix)
+  - Tracks the receipts of a block.
+  - Used in `blockReceiptsKey`.
